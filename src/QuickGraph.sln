@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{6EC5788D-DB36-4094-AB0F-A9E2C0F56B62}"
 	ProjectSection(SolutionItems) = preProject
 		ccnet.config.xml = ccnet.config.xml
@@ -23,36 +25,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickGraph.Msagl", "QuickGraph.Msagl\QuickGraph.Msagl.csproj", "{7E57B699-79C9-4FDF-89FC-D98BD8DDAFF6}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs03.codeplex.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = QuickGraph\\QuickGraph.csproj
-		SccProjectName1 = QuickGraph
-		SccLocalPath1 = QuickGraph
-		SccProjectUniqueName2 = QuickGraph.Glee\\QuickGraph.Glee.csproj
-		SccProjectName2 = QuickGraph.Glee
-		SccLocalPath2 = QuickGraph.Glee
-		SccProjectUniqueName3 = QuickGraph.Tests\\QuickGraph.Tests.csproj
-		SccProjectName3 = QuickGraph.Tests
-		SccLocalPath3 = QuickGraph.Tests
-		SccProjectUniqueName4 = QuickGraph.Unit\\QuickGraph.Unit.csproj
-		SccProjectName4 = QuickGraph.Unit
-		SccLocalPath4 = QuickGraph.Unit
-		SccProjectUniqueName5 = QuickGraph.Graphviz\\QuickGraph.Graphviz.csproj
-		SccProjectName5 = QuickGraph.Graphviz
-		SccLocalPath5 = QuickGraph.Graphviz
-		SccProjectUniqueName6 = QuickGraph.Data\\QuickGraph.Data.csproj
-		SccProjectName6 = QuickGraph.Data
-		SccLocalPath6 = QuickGraph.Data
-		SccProjectUniqueName7 = QuickGraph.Heap\\QuickGraph.Heap.csproj
-		SccProjectName7 = QuickGraph.Heap
-		SccLocalPath7 = QuickGraph.Heap
-		SccProjectUniqueName8 = QuickGraph.Msagl\\QuickGraph.Msagl.csproj
-		SccProjectName8 = QuickGraph.Msagl
-		SccLocalPath8 = QuickGraph.Msagl
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -93,5 +65,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD785A85-ED8A-4FAC-903E-80D1DE8A5DFC}
 	EndGlobalSection
 EndGlobal
