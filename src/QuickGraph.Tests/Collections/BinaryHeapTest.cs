@@ -3,7 +3,6 @@ using Microsoft.Pex.Framework.Using;
 using System;
 using System.Collections.Generic;
 using Microsoft.Pex.Framework.Validation;
-using Microsoft.Pex.Framework.Wizard;
 using System.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

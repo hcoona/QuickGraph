@@ -11,8 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuickGraph.Graphviz\QuickGraph.Graphviz.csproj" />
-    <ProjectReference Include="..\QuickGraph\QuickGraph.Core.csproj" />
+    <EmbeddedResource Include="quickgraph.banner.png" />
+    <EmbeddedResource Include="quickgraph.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Algorithms\Cliques\ncliques.pdf" />
+    <None Include="quickgraph.snk" />
+    <None Include="Diagrams\TraversalInterfaces.cd" />
   </ItemGroup>
 
 </Project>
