@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>quickgraph.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>3.6.61119.8</Version>
+    <Authors>Jonathan Peli de Halleux</Authors>
+    <Company>Jonathan Peli de Halleux</Company>
+    <Product>QuickGraph</Product>
+    <Description>
+      QuickGraph provides generic directed/undirected graph data structures and algorithms for .Net, Silverlight, Windows Phone and Win 8.
+      QuickGraph comes with algorithms such as depth first search, breath first search, A* search, shortest path,
+      k-shortest path, maximum flow, minimum spanning tree, least common ancestors, etc...
+    </Description>
+    <PackageProjectUrl>https://github.com/hcoona/quickgraph</PackageProjectUrl>
+    <PackageLicenseUrl>http://quickgraph.codeplex.com/license</PackageLicenseUrl>
+    <PackageTags>algorithms graph directed undirected dfs bfs graphviz graphml data structure</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>
+      Generic graph data structures and algorithms for .NET
+      This is a folk version building for Net40 &amp; NetStandard2.0
+    </PackageReleaseNotes>
+    <PackageIconUrl>https://raw.githubusercontent.com/hcoona/quickgraph/master/src/QuickGraph/quickgraph.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/hcoona/quickgraph</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickGraph.Data\QuickGraph.Data.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\QuickGraph.Graphviz\QuickGraph.Graphviz.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\QuickGraph.Serialization\QuickGraph.Serialization.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\QuickGraph\QuickGraph.Core.csproj" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Workaround for https://github.com/NuGet/Home/issues/3891 -->
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2POutput</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+  <Target Name="IncludeP2POutput">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)QuickGraph.Data.dll" />
+      <BuildOutputInPackage Include="$(OutputPath)QuickGraph.Graphviz.dll" />
+      <BuildOutputInPackage Include="$(OutputPath)QuickGraph.Serialization.dll" />
+      <BuildOutputInPackage Include="$(OutputPath)QuickGraph.Core.dll" />
+    </ItemGroup>
+  </Target>
+
+</Project>

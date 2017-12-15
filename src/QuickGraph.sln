@@ -38,6 +38,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickGraph.Samples", "Quick
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickGraph.Serialization", "QuickGraph.Serialization\QuickGraph.Serialization.csproj", "{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickGraph.All", "QuickGraph.All\QuickGraph.All.csproj", "{B664D903-64F4-41AD-9843-B0A636ABDE2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,12 @@ Global
 		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release20|Any CPU.ActiveCfg = Release|Any CPU
 		{4D96C520-8EDA-49F0-9201-ED8BEE69B1FC}.Release20|Any CPU.Build.0 = Release|Any CPU
+		{B664D903-64F4-41AD-9843-B0A636ABDE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B664D903-64F4-41AD-9843-B0A636ABDE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B664D903-64F4-41AD-9843-B0A636ABDE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B664D903-64F4-41AD-9843-B0A636ABDE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B664D903-64F4-41AD-9843-B0A636ABDE2C}.Release20|Any CPU.ActiveCfg = Release|Any CPU
+		{B664D903-64F4-41AD-9843-B0A636ABDE2C}.Release20|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
