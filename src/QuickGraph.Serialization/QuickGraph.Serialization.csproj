@@ -9,6 +9,8 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>quickgraph.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('version.props', '$(MSBuildThisFileDirectory)../'))" />
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />

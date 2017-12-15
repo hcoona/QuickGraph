@@ -8,9 +8,9 @@
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>quickgraph.snk</AssemblyOriginatorKeyFile>
-    <ApplicationIcon />
-    <Win32Resource />
   </PropertyGroup>
+  
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('version.props', '$(MSBuildThisFileDirectory)../'))" />
 
   <ItemGroup>
     <EmbeddedResource Include="quickgraph.banner.png" />

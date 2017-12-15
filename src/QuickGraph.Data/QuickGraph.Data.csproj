@@ -9,6 +9,8 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>quickgraph.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('version.props', '$(MSBuildThisFileDirectory)../'))" />
 
   <ItemGroup>
     <ProjectReference Include="..\QuickGraph.Graphviz\QuickGraph.Graphviz.csproj" />

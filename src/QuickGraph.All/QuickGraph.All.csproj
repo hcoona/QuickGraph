@@ -6,12 +6,15 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>quickgraph.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('version.props', '$(MSBuildThisFileDirectory)../'))" />
 
   <PropertyGroup>
-    <Version>3.6.61119.8</Version>
+    <Title>QuickGraph.All</Title>
     <Authors>Jonathan Peli de Halleux</Authors>
     <Company>Jonathan Peli de Halleux</Company>
     <Product>QuickGraph</Product>
+    <Summary>Generic graph data structures and algorithms for .NET</Summary>
     <Description>
       QuickGraph provides generic directed/undirected graph data structures and algorithms for .Net, Silverlight, Windows Phone and Win 8.
       QuickGraph comes with algorithms such as depth first search, breath first search, A* search, shortest path,
@@ -38,6 +41,9 @@
   </ItemGroup>
 
   <!-- Workaround for https://github.com/NuGet/Home/issues/3891 -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2POutput</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
